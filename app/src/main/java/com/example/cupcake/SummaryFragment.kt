@@ -17,6 +17,7 @@ package com.example.cupcake
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,6 +45,7 @@ class SummaryFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.d("SHIT", "CREATED")
         val fragmentBinding = FragmentSummaryBinding.inflate(inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root
@@ -87,6 +89,7 @@ class SummaryFragment : Fragment() {
      * is being removed. As a result, clear out the binding object.
      */
     override fun onDestroyView() {
+        Log.d("SHIT", "DESTROYED")
         super.onDestroyView()
         binding = null
     }

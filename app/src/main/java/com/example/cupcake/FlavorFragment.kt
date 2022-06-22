@@ -33,9 +33,7 @@ class FlavorFragment : Fragment() {
 
     private val sharedViewModel: OrderViewModel by activityViewModels()
 
-    // Binding object instance corresponding to the fragment_flavor.xml layout
-    // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
-    // when the view hierarchy is attached to the fragment.
+
     private var binding: FragmentFlavorBinding? = null
 
     override fun onCreateView(
